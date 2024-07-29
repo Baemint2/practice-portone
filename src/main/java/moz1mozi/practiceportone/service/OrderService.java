@@ -24,7 +24,7 @@ public class OrderService {
 
         //임시 결제내역 생성
         Payment payment = Payment.builder()
-                .price(1000L)
+                .price(100L)
                 .status(PaymentStatus.READY)
                 .build();
 
@@ -33,7 +33,7 @@ public class OrderService {
         // 주문 생성
         Order order = Order.builder()
                 .member(member)
-                .price(1000L)
+                .price(100L)
                 .itemName("1달러샵 상품")
                 .orderUid(UUID.randomUUID().toString())
                 .payment(payment)
